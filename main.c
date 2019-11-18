@@ -41,7 +41,7 @@ void paritate(unsigned int iban,unsigned char *bit_par)//2
     *x = *y;
     *y = aux;
 }*/
-//qsort()
+qsort()
 
 void reordonare(client*cl,int n)//3
 {
