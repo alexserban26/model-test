@@ -41,7 +41,7 @@ void paritate(unsigned int iban,unsigned char *bit_par)//2
     *x = *y;
     *y = aux;
 }*/
-qsort()
+
 
 void reordonare(client*cl,int n)//3
 {
@@ -54,7 +54,9 @@ void reordonare(client*cl,int n)//3
 }
 int compare (const void * a, const void * b)
 {
-  return ( *(int*)a - *(int*)b );
+client *A= (client*)a;
+client *B= (client *)b;
+  return A->stare_civila<B->stare_civila - A->stare_civila>B->stare_civila;
 }
 int main()
 { int n;
